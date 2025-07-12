@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TCET NCC Achievements 2024–25</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    html {
+  scroll-behavior: smooth;
+}
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+
+    .page-header {
+      background-color: #002147;
+  color: white;
+  padding: 40px 20px;
+  text-align-last:center;
+  border-bottom: 5px solid #8B0000;
+  width: 100%;
+  margin: 0;
+  position:relative;
+
+  z-index: 10;
+      
+    }
+
+    .page-header h1 {
+      font-size: 2.8rem;
+      font-weight: 600;
+        margin: 0;
+    }
+
+    .intro-text {
+      max-width: 1600px;
+      margin: 30px auto;
+      font-size: 1.2rem;
+      text-align: justify;
+      padding: 0 20px;
+      color: #444;
+    }
+
+    .section-title {
+      font-size: 3rem;
+      font-weight: 600;
+      color: #ffffff;
+      margin-top: 40px;
+      margin-bottom:30px;
+      text-align: center;
+      background-color: #e87070;
+    }
+
+    .camp-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #002147;
+      padding: 10px 20px;
+      background-color: #ffeaea;
+      border-radius: 4px;
+      margin-top: 50px;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    .cadet-card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      padding: 20px;
+      margin-bottom: 30px;
+      transition: transform 0.3s ease, border 0.3s ease;
+      border: 2px solid transparent;
+      cursor: pointer;
+    }
+
+    .cadet-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .cadet-card.active-card {
+      border: 2px solid #c62828;
+    }
+
+    .cadet-img {
+      width: 100%;
+      height: 250px;
+      background-color: #dee2e6;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      background-image: url('https://via.placeholder.com/300x250');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .cadet-name {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #002147;
+    }
+
+    .cadet-desc {
+      font-size: 0.95rem;
+      margin-top: 10px;
+      color: #444;
+      line-height: 1.6;
+    }
+
+    /* Sidebar custom styles 
+.bg-sidebar {
+  background-color: #012a4a;
+  min-height: 100vh;
+  padding-top: 20px;
+  border-right: 2px solid #0077b6;
+}
+
+#sidebar .nav-link {
+  color: #ffffff;
+  font-weight: 500;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+#sidebar .nav-link:hover {
+  background-color: #0077b6;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+#sidebar h5 {
+  font-weight: 600;
+  color: #90e0ef;
+}*/
+
+.sidebar-custom {
+ width: 490px;
+  height: calc(100vh - 0px); /* Adjust height based on header height */
+  position: fixed;
+  top: 0px; /* exactly below the header */
+  left: 0;
+  bottom: 0;
+  background: #012a4a;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 10;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-header {
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+
+.sidebar-nav {
+  list-style: none;
+  padding-left: 0;
+    margin: 0;
+}
+
+.sidebar-nav li {
+  margin: 10px 0;
+}
+
+.sidebar-nav a {
+  ddisplay: block;
+  padding: 10px 20px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.sidebar-nav a i {
+  margin-right: 10px;
+}
+
+.sidebar-nav a:hover {
+  background: #0077b6;
+  border-radius: 5px;
+}
+
+.sidebar-footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  color: #90e0ef;
+}
+
+.main-content {
+  margin-left: 500px; /* matches sidebar width + gap */
+  padding: 20px;
+}
+  </style>
+</head>
+<body>
+ </div class="main-content">
+  <header class="page-header">
+    <h1>TCET NCC UNIT – Cadet Achievements 2024–25</h1>
+  </header>
+</div>
+</body>
+  
+<div class="main-content">
+  <div class="container">
+    <div class="row">
+    <!-- Sidebar -->
+    <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-sidebar sidebar">
+      <div class="sidebar-custom">
+  <div class="sidebar-header">
+    <h1 class="text-white"> Camps</h1>
+  </div>
+  <ul class="sidebar-nav">
+    <li><a href="#iyp2025"><i class="fas fa-flag"></i> International Youth Program, 2025</a></li><br>
+    <li><a href="#rdc2024"><i class="fas fa-flag"></i> Republic Day Camp, 2024</a></li><br>
+    <li><a href="#rdc2025"><i class="fas fa-flag"></i> Republic Day Camp, 2025</a></li><br>
+    <li><a href="#iic2025"><i class="fas fa-lightbulb"></i> Idea & Innovation Camp, 2025</a></li><br>
+    <li><a href="#adc2025"><i class="fas fa-user-shield"></i> Army Day Camp, 2025</a></li><br>
+    <li><a href="#nsc"><i class="fas fa-anchor"></i> Nau Sainik Camp</a></li><br>
+    <li><a href="#catc-army"><i class="fas fa-users"></i> CATC – Army</a></li><br>
+    <li><a href="#catc-navy"><i class="fas fa-ship"></i> CATC – Navy</a></li><br>
+  </ul>
+  <div class="sidebar-footer">
+    <p>© 2025 TCET NCC</p>
+  </div>
+</div>
+</div>
+</nav>
+
+    <!-- Main Content Area -->
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+      <!-- Your Achievements Sections Go Here -->
+    </main>
+  </div class="main-content">
+    <p class="intro-text">
+      The National Cadet Corps (NCC) Unit of Thakur College of Engineering and Technology (TCET) proudly celebrates the achievements of its cadets who have demonstrated outstanding discipline, leadership, and patriotism on prestigious national and international platforms. Their participation in elite camps and ceremonies is a testament to their relentless commitment to service and excellence.
+    </p>
+
+    <div class="section-title">🎖 Cadet Achievements</div>
+
+  
+  
+
+
+
+    <!-- Example Section: Repeat this structure for all categories -->
+    <div id="iyp2025" class="camp-title">International Youth Program, Nepal 2025</div>
+    <div class="row">
+        <div class="col-md-6 col-lg-4">
+    <div class="cadet-card">
+      <div class="cadet-img"></div>
+      <div class="cadet-name"></div>
+      <div class="cadet-desc">
+      </div>
+    </div>
+  </div>
+  
+      <div class="col-md-6 col-lg-4">
+        <div class="cadet-card">
+          <div class="cadet-img"></div>
+          <div class="cadet-name">SUO Harsh Pal (TE IT)</div>
+          <div class="cadet-desc">
+            • Represented DG NCC New Delhi at the International Youth Program in Nepal
+          </div>
+        </div>
+      </div>
+      
+    
+   
+
+    
+
+<div class="col-md-6 col-lg-4">
+    <div class="cadet-card">
+      <div class="cadet-img"></div>
+      <div class="cadet-name"></div>
+      <div class="cadet-desc">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Republic Day Camp 2024 -->
+   <div id="rdc2024" class="camp-title">Republic Day Camp 2024</div>
+    <div class="row">
+      <div class="col-md-6 col-lg-4">
+        <div class="cadet-card">
+          <div class="cadet-img"></div>
+          <div class="cadet-name">SUO Jay Pal</div>
+          <div class="cadet-desc">
+            • Represented Maharashtra at the Republic Day Celebration 2024, New Delhi
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+    <div class="cadet-card">
+      <div class="cadet-img"></div>
+      <div class="cadet-name"></div>
+      <div class="cadet-desc">
+      </div>
+    </div>
+  </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="cadet-card">
+          <div class="cadet-img"></div>
+          <div class="cadet-name">JUO Harsh Pal (TE IT)</div>
+          <div class="cadet-desc">
+            • Represented Maharashtra at the Republic Day Celebration 2024, New Delhi
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Republic Day Camp 2025 -->
+    <div id="rdc2025" class="camp-title">Republic Day Camp 2025</div>
+    <div class="row">
+
+        
+      <div class="col-md-6 col-lg-4">
+        <div class="cadet-card">
+          <div class="cadet-img"></div>
+          <div class="cadet-name">SUO Priyanka Chaubey (TE COMP)</div>
+          <div class="cadet-desc">
+            • Represented Maharashtra at the Republic Day Celebration 2025, New Delhi
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="cadet-card">
+          <div class="cadet-img"></div>
+          <div class="cadet-name">SUO Trisha Yadav (SE COMP)</div>
+          <div class="cadet-desc">
+            • Represented Maharashtra at the Republic Day Celebration 2025, New Delhi
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="cadet-card">
+          <div class="cadet-img"></div>
+          <div class="cadet-name">SUO Snehaal Vishwakarma (SE COMP)</div>
+          <div class="cadet-desc">
+            • Represented Maharashtra at the Republic Day Celebration 2025, New Delhi
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Army Day Camp -->
+    <div id="adc2025" class="camp-title">Army Day Camp</div>
+
+<!-- Row wrapper for both cards -->
+<div class="row">
+
+    <div class="col-md-6 col-lg-4">
+    <div class="cadet-card">
+      <div class="cadet-img"></div>
+      <div class="cadet-name"></div>
+      <div class="cadet-desc">
+      </div>
+    </div>
+  </div>
+  <!-- Card 1 -->
+  <div class="col-md-6 col-lg-4">
+    <div class="cadet-card">
+      <div class="cadet-img"></div>
+      <div class="cadet-name">JUO Janhavi Chauhan (SE MME)</div>
+      <div class="cadet-desc">
+        • Represented Maharashtra at the Army Day Parade 2025, Pune
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="col-md-6 col-lg-4">
+    <div class="cadet-card">
+      <div class="cadet-img"></div>
+      <div class="cadet-name"></div>
+      <div class="cadet-desc">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- IIC -->
+<div id="iic2025" class="camp-title">Idea and Innovation Camp</div>
+
+<!-- Row wrapper for the cards -->
+<div class="row">
+  <!-- Card 1 -->
+  <div class="col-md-6 col-lg-4">
+    <div class="cadet-card">
+      <div class="cadet-img"></div>
+      <div class="cadet-name">PO Cadet Premraj Dhondphonde (SE COMP)</div>
+      <div class="cadet-desc">
+        • Represented Maharashtra at DG NCC New Delhi under the Idea & Innovation Project – 2025
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6 col-lg-4">
+    <div class="cadet-card">
+      <div class="cadet-img"></div>
+      <div class="cadet-name"></div>
+      <div class="cadet-desc">
+      </div>
+    </div>
+  </div>
+  <!-- Card 2 -->
+  <div class="col-md-6 col-lg-4">
+    <div class="cadet-card">
+      <div class="cadet-img"></div>
+      <div class="cadet-name">Cadet Sudhir Bind (ST AIDS)</div>
+      <div class="cadet-desc">
+        • Represented Maharashtra at DG NCC New Delhi under the Idea & Innovation Project – 2025
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Add remaining sections below as needed, following the same structure -->
+    <!-- ... Your existing camp and cadet HTML goes here ... -->
+
+  </div>
+
+  <!-- JS for card click border toggle -->
+  <script>
+    document.querySelectorAll('.cadet-card').forEach(card => {
+      card.addEventListener('click', () => {
+        card.classList.toggle('active-card');
+      });
+    });
+     // Offset scroll for anchors if header is fixed
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        window.scrollTo({
+          top: target.offsetTop - 80, // adjust offset for fixed headers
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+  </script>
+</div>
+</body>
+</html>
