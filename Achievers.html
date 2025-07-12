@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NCC Header</title>
+  <style>
+    /* Reset top margin and padding */
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Header Section Styling */
+    .tab-box {
+      padding: 2px;
+      text-align: center;
+    }
+
+    .header-logo {
+      width: 95%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* Official Profile Section */
+    .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03); /* Slight zoom */
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Elevation shadow */
+      z-index: 10;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Header Section -->
+  <div class="container mt-5">
+    <div class="tab-box">
+      <img src="Header.png" alt="NCC Header" class="header-logo">
+    </div>
+  </div>
+
+  <!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+
+<!-- Custom Navbar Style -->
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .navbar-custom {
+    background: linear-gradient(90deg, #800000, #1a1a2e); /* Maroon to Navy */
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .navbar-brand img {
+    height: 50px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  .navbar-brand:hover img {
+    transform: scale(1.1);
+  }
+
+  .nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+    position: relative;
+  }
+
+  .nav-link::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #f5b041;
+    transition: 0.3s;
+  }
+
+  .nav-link:hover::after {
+    width: 100%;
+  }
+
+  .dropdown-menu {
+    background-color: #1a1a2e;
+    border: none;
+  }
+
+  .dropdown-item {
+    color: white;
+    transition: background 0.3s ease;
+  }
+
+  .dropdown-item:hover {
+    background-color: #800000;
+    color: #fff;
+  }
+</style>
+
+<!-- Add in <head> -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .navbar-custom {
+    background: linear-gradient(90deg, #800000, #1a1a2e);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  }
+
+  .navbar-brand img {
+    height: 45px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  .nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    position: relative;
+  }
+
+  .nav-link::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #f5b041;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.4s;
+  }
+
+  .nav-link:hover::after {
+    width: 100%;
+  }
+
+  .dropdown-menu {
+    background-color: #1a1a2e;
+  }
+
+  .dropdown-item {
+    color: #fff;
+  }
+
+  .dropdown-item:hover {
+    background-color: #fbf6f6;
+  }
+</style>
+
+<!-- Navbar -->
+<!-- Fonts & Styling -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .navbar-custom {
+    background: linear-gradient(90deg, #8b0000, #1a1a2e);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    padding: 0.4rem 1.2rem;
+  }
+
+  .navbar-brand img {
+    height: 45px;
+    margin-right: 8px;
+  }
+
+  .nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+  }
+
+  .nav-link:hover {
+    color: #ffd700 !important;
+  }
+
+  .nav-link::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #9b9679;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transition: width 0.4s ease;
+  }
+
+  .nav-link:hover::after {
+    width: 100%;
+    display: none !important;
+
+  }
+
+/* Position the dropdown to float */
+.nav-item.dropdown {
+  position: relative; /* Anchor for absolute dropdown */
+}
+
+.dropdown-menu {
+  position: relative;
+  top: 100%; /* Places it just below the trigger */
+  left: 0;
+  z-index: 1050;
+  margin-top: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  min-width: 180px;
+}
+
+
+  .dropdown-item:hover {
+    background-color: #f1eded;
+  }
+
+  @media (max-width: 992px) {
+    .navbar-nav {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      max-width: 100%;
+    }
+  }
+
+/* CSS Styles  */
+  .ncc-hero-section {
+    background: #f8f9fa;
+  }
+
+  .ncc-logo {
+    max-width: 250px;
+    animation: floatLogo 3s ease-in-out infinite;
+    transition: transform 0.3s ease;
+  }
+
+  .ncc-logo:hover {
+    transform: scale(1.05) rotate(-1deg);
+  }
+
+  ul {
+    list-style: disc inside;
+    padding-left: 0;
+    margin-bottom: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    .ncc-logo {
+      max-width: 200px;
+    }
+  }
+</style>
+
+<!-- Navbar -->
+<nav class="navbar navbar-dark navbar-custom sticky-top">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+
+     <!-- Logo + Text aligned left -->
+    <a class="navbar-brand d-flex align-items-center me-4" href="index.html">
+      <img src="ncclogo.png" alt="NCC Logo" style="height: 70px; width: auto;" class="me-2">
+      <div class="d-flex flex-column lh-sm text-white">
+        <span class="fw-bold" style="font-size: 2.0rem;">TCET</span>
+        <span style="font-size: 1.2rem;">NCC UNIT</span>
+      </div>
+    </a>
+    <!-- Navigation Items Right-Aligned -->
+<ul class="navbar-nav d-flex flex-row align-items-center ms-auto gap-2">
+  <li class="nav-item"><a class="nav-link" href="https://www.tcetmumbai.in">TCET-Git</a></li>
+  <li class="nav-item"><a class="nav-link" href="test2.html">About Us</a></li>
+  <li class="nav-item"><a class="nav-link" href="tcet_nccdomains.html">Our Teams</a></li>
+
+  <!-- Camps Dropdown without dropdown button -->
+  <li class="nav-item dropdown">
+    <a class="nav-link" href="#" id="campsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Camps
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="campsDropdown">
+      <li><a class="dropdown-item" href="#">Republic Day Camp (RDC)</a></li>
+      <li><a class="dropdown-item" href="#">Army Day Camp</a></li>
+      <li><a class="dropdown-item" href="#">Nau Sainik Camp (NSC)</a></li>
+      <li><a class="dropdown-item" href="#">Combine Annual Training Camp (CATC)</a></li>
+    </ul>
+  </li>
+
+  <li class="nav-item"><a class="nav-link" href="#achievers">Achievers</a></li>
+
+  <!-- Activities Dropdown (as-is) -->
+  <li class="nav-item dropdown">
+    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Activities
+    </a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Puneet Sagar</a></li>
+      <li><a class="dropdown-item" href="#">Tree Plantation</a></li>
+      <li><a class="dropdown-item" href="#">Blood Donation</a></li>
+    </ul>
+  </li>
+
+  <li class="nav-item"><a class="nav-link" href="#calendar">Calendar</a></li>
+  <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+  <li class="nav-item"><a class="nav-link" href="#magazine">Magazine</a></li>
+  <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+</ul>
+
+  </div>
+</nav>
+
+<!-- TCET NCC Hero Section -->
+
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+<!-- Animate.css for smooth image animation -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+<!-- AOS Animation -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<section id="hero" class="py-5 bg-light">
+  <div class="container" data-aos="fade-up">
+    <div class="row align-items-center">
+      
+      <!-- Left: Larger Logo Without Border -->
+      <div class="col-lg-5 text-center mb-4 mb-lg-0" data-aos="zoom-in" data-aos-delay="100">
+        <img src="ncclogo.png" alt="NCC Logo" 
+        class="img-fluid " 
+        style="max-width: 380px;">
+      </div>
+
+      <!-- Right: Content -->
+      <div class="col-lg-7">
+        <h1 class="display-5 fw-bold text-danger mb-4">National Cadet Corps (NCC)</h1>
+        <p class="lead text-dark mb-3">
+          The National Cadet Corps (NCC) is the youth wing of the Indian Armed Forces, headquartered in New Delhi. 
+          It is a voluntary organization open to school and college students across India, operating as a Tri-Services organization 
+          that includes the Army, Navy, and Air Force wings. The NCC recruits cadets from educational institutions nationwide, 
+          providing them with basic military training in small arms, physical fitness and parade drills.
+        </p>
+        <p class="lead text-dark mb-3">
+          Beyond military training, the NCC emphasises personality development, social responsibility and community service, 
+          aiming to nurture disciplined, patriotic, responsible and united citizens.
+        </p>
+        <p class="text-dark mb-3">
+          <strong>Motto:</strong> “Unity and Discipline (एकता और अनुशासन)”, adopted on 23rd December 1957, reflects NCC’s aim 
+          to unite youth from across the country and instill discipline and national integration.
+        </p>
+        <p class="text-dark">
+          The TCET-NCC Unit was established with a sanctioned strength of <strong>104 Army Wing Cadets</strong> & 
+          <strong>50 Naval Wing Cadets</strong> on <strong>14th October 2021</strong> and <strong>27th October 2023</strong> 
+          respectively. The unit conducts regular training and activities under the guidance of:
+          <br><strong>Cdr. Vijay Pratap Singh</strong> (Mentor & Officer In-charge),
+          <strong>Lt. (Dr.) Nivant Kambale</strong> (Associate NCC Officer, Army Wing),
+          <strong>Mr. Sunil Khatri</strong> (Care Taker Officer, Navy Wing).
+        </p>
+        <p class="text-dark">
+          The TCET-NCC Unit is committed to developing disciplined, responsible and united citizens in line with the NCC motto.
+        </p>
+        <a href="#about" class="btn btn-danger mt-3 px-4 py-2">Know More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features and Objectives Section -->
+<section class="py-5 bg-light border-top border-bottom" id="features-objectives">
+  <div class="container">
+    <div class="row align-items-start">
+      <!-- Key Features Column -->
+      <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right">
+        <h3 class="text-dark fw-bold mb-4">Key Features</h3>
+        <ul class="list-unstyled ps-3">
+          <li class="mb-3">
+            <i class="bi bi-check-circle-fill text-primary me-2"></i>
+            <strong>First-of-its-kind:</strong> Pioneer among private engineering colleges in Maharashtra with official NCC sanction under the Ministry of Defence.
+          </li>
+          <li class="mb-3">
+            <i class="bi bi-check-circle-fill text-primary me-2"></i>
+            <strong>'C' Certificate Advantage:</strong> NCC cadets who successfully earn the ‘C’ Certificate are exempted from the written exam in various Indian Armed Forces recruitment processes.
+          </li>
+          <li class="mb-3">
+            <i class="bi bi-check-circle-fill text-primary me-2"></i>
+            <strong>Prestigious Parade Representation:</strong> Outstanding cadets are nominated for Republic Day and Independence Day parades in Mumbai and New Delhi.
+          </li>
+          <li class="mb-3">
+            <i class="bi bi-check-circle-fill text-primary me-2"></i>
+            <strong>Global Exposure:</strong> Selected cadets are deputed for international deployments, training programs, and the Youth Exchange Programme (YEP).
+          </li>
+          <li class="mb-3">
+            <i class="bi bi-check-circle-fill text-primary me-2"></i>
+            <strong>Combat Readiness:</strong> Hands-on training in small arms and weapon handling conducted by qualified Army personnel.
+          </li>
+          <li class="mb-3">
+            <i class="bi bi-check-circle-fill text-primary me-2"></i>
+            <strong>Holistic Learning:</strong> Sessions on national integration, safety, security, and health to instill social awareness and civic responsibility.
+          </li>
+          <li class="mb-3">
+            <i class="bi bi-check-circle-fill text-primary me-2"></i>
+            <strong>Career Mentorship:</strong> Periodic motivational lectures and expert guidance on “How to Join the Indian Armed Forces.”
+          </li>
+        </ul>
+      </div>
+
+      <!-- Objectives Column -->
+      <div class="col-md-6" data-aos="fade-left">
+        <h3 class="text-dark fw-bold mb-4">Our Objectives</h3>
+        <p class="mb-4">The TCET NCC Unit aims to nurture students into responsible citizens and future leaders, equipped with strength of character and a spirit of service.</p>
+        <ul class="list-unstyled ps-3">
+          <li class="mb-3">
+            <i class="bi bi-arrow-right-circle-fill text-success me-2"></i>
+            <strong>Leadership Development:</strong> Create a pool of well-trained, motivated youth who can take up leadership roles across diverse sectors, including defense services.
+          </li>
+          <li class="mb-3">
+            <i class="bi bi-arrow-right-circle-fill text-success me-2"></i>
+            <strong>Character Building:</strong> Foster qualities such as discipline, camaraderie, integrity, and selfless service among cadets.
+          </li>
+          <li class="mb-3">
+            <i class="bi bi-arrow-right-circle-fill text-success me-2"></i>
+            <strong>Community Engagement:</strong> Conduct socially impactful activities to contribute towards community development and national integration.
+          </li>
+          <li class="mb-3">
+            <i class="bi bi-arrow-right-circle-fill text-success me-2"></i>
+            <strong>Career Facilitation:</strong> Provide a structured environment that inspires engineering students to pursue a career in the Indian Armed Forces.
+          </li>
+          <li class="mb-3">
+            <i class="bi bi-arrow-right-circle-fill text-success me-2"></i>
+            <strong>Adventure & Resilience:</strong> Encourage a spirit of adventure, resilience, and secularism through exposure to real-life challenges and collaborative missions.
+          </li>
+        </ul>
+
+        <div class="mt-4">
+          <blockquote class="blockquote text-muted border-start border-4 ps-3 fst-italic">
+            "At TCET NCC, we don’t just train cadets—we inspire a generation committed to serve the nation with honor and pride."
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Officer Section -->
+<section id="officers" class="py-5 bg-light border-top">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold text-uppercase">Our Officers</h2>
+      <p class="text-muted">Meet the dedicated officers guiding and mentoring the TCET NCC Cadets</p>
+    </div>
+    <div class="row g-4 justify-content-center">
+      
+      <!-- Officer 1 -->
+      <div class="col-md-4">
+        <div class="card h-100 text-center shadow border-0">
+          <img src="cdr.png" class="card-img-top rounded-top" alt="Cdr. Vijay Pratap Singh">
+          <div class="card-body">
+            <h5 class="card-title mb-0 fw-semibold">Cdr. Vijay Pratap Singh</h5>
+            <p class="text-muted">Officer In-Charge</p>
+            <a href="officer-cdr.html" class="btn btn-outline-primary btn-sm">View Profile</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Officer 2 -->
+      <div class="col-md-4">
+        <div class="card h-100 text-center shadow border-0">
+          <img src="ano.png" class="card-img-top rounded-top" alt="Lt. Dr. Nivant Kamabale">
+          <div class="card-body">
+            <h5 class="card-title mb-0 fw-semibold">Lt. Dr. Nivant Kamabale</h5>
+            <p class="text-muted">Associate NCC Officer</p>
+            <a href="officer-ano.html" class="btn btn-outline-primary btn-sm">View Profile</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Officer 3 -->
+      <div class="col-md-4">
+        <div class="card h-100 text-center shadow border-0">
+          <img src="cto.png" class="card-img-top rounded-top" alt="Mr. Sunil Khatri">
+          <div class="card-body">
+            <h5 class="card-title mb-0 fw-semibold">Mr. Sunil Khatri</h5>
+            <p class="text-muted">Care Taker Officer (Navy Wing)</p>
+            <a href="officer-cto.html" class="btn btn-outline-primary btn-sm">View Profile</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
